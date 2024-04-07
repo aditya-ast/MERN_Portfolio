@@ -79,6 +79,10 @@
             width: 50px;
             z-index: 5;
             cursor: wait;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 
@@ -89,8 +93,12 @@
         z-index: 1;
 
         @include mobile {
-            display: none;
-            background-image: url('../../assets/images/hero.png');
+            height: 20%;
+            width: 100%;
+            top: 0;
+            right: 50%;
+            object-fit: cover;
+            position:absolute;
         }
 
     }
