@@ -52,7 +52,7 @@ const Hero = () => {
                 </motion.h1>
                 <motion.div variants = {textVariants} className="buttons">
                     <motion.button variants = {textVariants}>See the Latest Works</motion.button>
-                    <motion.button variants = {textVariants}><a href='/resume.pdf'>Download Resume</a></motion.button>
+                    <motion.button variants = {textVariants}><a href='/resume.pdf' target='_blank'>Download Resume</a></motion.button>
                 </motion.div>
                 <motion.img variants = {textVariants} animate="scrollButton" src="/scroll.png" alt="" />
             </motion.div>
