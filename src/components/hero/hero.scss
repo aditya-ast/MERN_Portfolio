@@ -6,10 +6,6 @@
     overflow: hidden;
     position: relative;
 
-    @include mobile {
-        height: 100vh;
-    }
-
     .wrapper {
         max-width: 1366px;
         height: 100%;
@@ -24,7 +20,7 @@
             gap: 40px;
 
             @include mobile {
-                height: 75%;
+                height: 50%;
                 width: 100%;
                 gap: 15px;
                 align-items: center;
