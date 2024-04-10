@@ -26,7 +26,7 @@ const Services = () => {
     const isInView = useInView(ref, {margin: "-100px" });
 
   return (
-    <motion.div className="services" variants={variants} initial="initial" ref={ref} animate={isInView && "animate"} >
+    <motion.div className="services" variants={variants} initial="initial" ref={ref} animate={"animate"} >
       <motion.div className="textContainer">
         <p>
           I focus on helping your brand grow <br /> and move forward

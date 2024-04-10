@@ -1,9 +1,16 @@
+@import '../../app.scss';
+
 .services {
     background: linear-gradient(180deg, #0c0c1d, #111132);
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mobile {
+        padding: 20px;
+        height: auto;
+    }
 
     .textContainer{
         flex: 1;
@@ -12,17 +19,32 @@
         align-items: center;
         gap: 20px;
 
+        @include mobile {
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
         p {
             font-size: 20px;
             font-weight: 200;
             color: gray;
             text-align: right;
+
+            @include mobile {
+                font-size: 15px;
+            }
         }
 
         hr {
             width: 500px;
             border: none;
             border-top: 0.5px solid gray;
+
+            @include mobile {
+                width: 200px;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -32,21 +54,40 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile {
+            width: 100%;
+        }
+
         .title {
             display: flex;
             gap: 50px;
             align-items: center;
+
+            @include mobile {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
 
             img {
                 height: 100px;
                 width: 300px;
                 border-radius: 50px;
                 object-fit: cover;
+
+                @include mobile {
+                    width: 170px;
+                    height: 70px;
+                }
             }
 
             h1 {
                 font-size: 96px;
                 font-weight: 100;
+
+                @include mobile {
+                    font-size: 28px;
+                }
             }
 
             button {
@@ -57,6 +98,13 @@
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
+
+                @include mobile {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
             }
             button:hover {
                 background-color: transparent;
@@ -72,6 +120,11 @@
          max-width: 1366px;
          margin: auto;
          bottom: 0;
+
+         @include mobile {
+            width: 100%;
+            flex-direction: column;
+        }
 
          .box {
             padding: 50px;
